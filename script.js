@@ -7,3 +7,8 @@ alert('Hello World!');
 //comentários de multiplas linhas são feitas utilizando asterisco e barras, como por exemplo:
 /*oi 
 galera*/
+
+//variaveis:
+var mensagem = "Hello World!"
+
+alert(mensagem);
