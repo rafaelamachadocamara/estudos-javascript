@@ -39,3 +39,20 @@ if(c%2 == 1){ //verifica se uma condição é verdadeira
 else{ //else executa todos os comandos que tiverem dentro caso o if falhe
     alert("Valor inválido")
 }
+
+//laços ou estrutura de repetição:
+//while é uma estrutura que vai repetir um determinado bloco de código enquanto a condição for valida
+var i =0;
+
+while(i < 3){
+    alert(i);
+
+    i = i+1;
+}
+
+//for executa para uma determinada condição
+var j;
+
+for(j = 0; j <3; j++){
+    alert(j);
+}
