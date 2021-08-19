@@ -56,3 +56,10 @@ var j;
 for(j = 0; j <3; j++){
     alert(j);
 }
+
+//tipos de dados:
+
+var numero = 6; //numero inteiro
+var decimal = 4.5; //mumero flutuante ou decimal 
+/*string*/ var texto = "Ola mundo"; //string é uma mensagem de texto
+var lista = ["laranja", "maça", "banana"]; //listas são sequencias de dados 
