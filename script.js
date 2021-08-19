@@ -16,6 +16,7 @@ alert(mensagem);
 //operações matematicas: 
 var a = 2;
 var b = 3;
+var c = "a";
 
 var soma = a+b
 var subtracao = a-b;
@@ -28,8 +29,13 @@ alert(multiplicacao);
 alert(divisao);
 
 //estrutura condicional:
-alert(9%2); //modulo é o resto da divisão
+alert(b%2); //modulo é o resto da divisão
 //fazer uma estrutura condicional para saber se o numero é par ou impar 
-if(b%2 == 1){ //verifica se uma condição é verdadeira
+if(c%2 == 1){ //verifica se uma condição é verdadeira
     alert("Número ímpar");
-} 
+}else if(c%2 == 0){
+    alert("Número Par");
+}
+else{ //else executa todos os comandos que tiverem dentro caso o if falhe
+    alert("Valor inválido")
+}
