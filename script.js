@@ -70,3 +70,6 @@ alert(lista[0]); // o valor 0 seria correspondente a 'laranja'
 for(i in lista){
     alert(lista[i]);
 }
+
+//console.log, ele exibe uma mensagem no log do navegador, ou console, sem necessidades de um pop up
+console.log("olá mundo")
