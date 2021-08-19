@@ -22,10 +22,19 @@ $(function(){
         $('p').fadeIn();
     });
 
-    $('#vermelho').click(function(){
+    /*$('#vermelho').click(function(){
         $('p').css("background-color", "red");
         $('p').fadeOut('slow');
         $('p').delay(1000);
         $('p').fadeIn('slow');
+    });
+});*/
+
+//testando outras formas de delays 
+
+$('#vermelho').click(function(){
+        $('p').css("background-color", "red");
+        $('p').fadeOut('slow');
+        $('p').fadeIn('7000');
     });
 });
