@@ -37,4 +37,13 @@ $('#vermelho').click(function(){
         $('p').fadeOut('slow');
         $('p').fadeIn('7000');
     });
+    //gravar mensagem
+    $('#vermelho').click(function(){
+        $('p').css("background-color", "red");
+        $('#mensagem').text("Cor alterada com sucesso");
+        $('#mensagem').css('color', 'red');
+        $('#mensagem').css('border', '1px solid black');
+        $('#mensagem').delay(3000);
+        $('#mensagem').fadeOut('fast');
+    });
 });
