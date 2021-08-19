@@ -56,3 +56,12 @@ $('#vermelho').click(function(){
         .delay(3000).fadeOut('fast');
     })
 });
+
+//testando declaração multipla de css
+$('#azul').click(function(){
+    $('p').css("background-color", "red");
+    $('#mensagem').text("Cor alterada com sucesso")
+    .css({color: 'red', border: '1px solid black', backgroundcolor:'F08080'})
+    .delay(3000)
+    .fadeOut('fast');
+})
