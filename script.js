@@ -26,3 +26,10 @@ alert(soma);
 alert(subtracao);
 alert(multiplicacao);
 alert(divisao);
+
+//estrutura condicional:
+alert(9%2); //modulo é o resto da divisão
+//fazer uma estrutura condicional para saber se o numero é par ou impar 
+if(b%2 == 1){ //verifica se uma condição é verdadeira
+    alert("Número ímpar");
+} 
