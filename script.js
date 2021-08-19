@@ -63,3 +63,10 @@ var numero = 6; //numero inteiro
 var decimal = 4.5; //mumero flutuante ou decimal 
 /*string*/ var texto = "Ola mundo"; //string é uma mensagem de texto
 var lista = ["laranja", "maça", "banana"]; //listas são sequencias de dados 
+
+//arrays. obter valor de uma lista 
+alert(lista[0]); // o valor 0 seria correspondente a 'laranja'
+//laço for:
+for(i in lista){
+    alert(lista[i]);
+}
