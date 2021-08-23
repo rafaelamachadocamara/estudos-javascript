@@ -61,7 +61,10 @@ $('#vermelho').click(function(){
 $('#azul').click(function(){
     $('p').css("background-color", "red");
     $('#mensagem').text("Cor alterada com sucesso")
-    .css({color: 'red', border: '1px solid black', backgroundcolor:'F08080'})
+    .css({color: 'red', border: '1px solid black'})
     .delay(3000)
+    //adicionando e removendo classes
+    .addClass('green')
+    $('button').removeClass('red')
     .fadeOut('fast');
-})
+});
