@@ -108,3 +108,7 @@ $(function () {
   });
 });
 
+//teste 
+/* Reproduza o código 
+"document.getElementyById('Teste').value = 10; utilizando o Jquery" */
+$('#Teste').val(10);
