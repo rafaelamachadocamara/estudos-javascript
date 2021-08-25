@@ -57,9 +57,9 @@ let olaMundo = `${ola} ${mundo} ${1 + 1}`;
     Booleans: */
 
 //São tipos de dados que possuem apenas dois valores: True ou False
-//Os valores true e false não são escritos entre aspas 
+//Os valores true e false não são escritos entre aspas
 let verdadeiro = true;
-let falso = false; 
+let falso = false;
 //Uma das formas mais comuns de se obter valores booleanos é através de comparações
 
 //true:
@@ -78,3 +78,37 @@ console.log(1 == "1");
 
 //false
 console.log(1 === "1");
+
+/* Tipo de dados 
+    Array: */
+
+//´´E uma lista ou coleçã ode dados que pode ser acessada por índice, para criar um vetor vazio basta criar uma variável e atribuir [] a ela.
+let vetor = [];
+
+//Atribuindo valores: você pode criar um vetor com seus valores separados por vírgula
+let vetor = [1, 22, 0, 100];
+
+//Você pode adicionar valores de qualquer tipo no vetor.
+let vetor = [1, "Olá Mundo", true, [1,2,3]];
+
+//Acessando valores: Os valores podem ser acessados através de seu índice
+let vetor = [1, 22, 0, 100];
+
+console.log(vetor[1]);
+
+//Alterando e atribuindo valores pelo índice:
+
+/* Com o índice você pode:
+
+a) Alterar um valor existente
+b) Inserir um novo valor em uma posição específica
+    */
+
+let vetor = [11, 21, 23, 433, 50];
+
+// Altera o valor da primeira posição
+vetor[0] = 9000;
+
+//Insere um valor novo após o ultimo elemento
+vetor[5] = 7;
+
