@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script>
+        let objeto = {
+            objeto2: {
+                vetor: [1,2,{valor:55}]
+            }
+        };
+
+        //Qual opção exibira o valor 55?
+        console.log(objeto["objeto2"].vetor.valor);
+
+        console.log(objeto.objeto2.vetor.valor);
+
+        console.log(objeto["objeto2"]["vetor"][2].valor); //Essa é a resposta correta
+
+        console.log(objeto.objeto2.vetor[3].valor);
+
+        console.log(objeto.objeto2.vetor[2].valor); //Assim também poderia dar certo
+
+
+    </script>
+</body>
+</html>
