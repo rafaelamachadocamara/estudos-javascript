@@ -131,3 +131,38 @@ console.log(x);
 Resumindo, null ainda é um valor e undefined é quando o JavaScript não sabe qual o tipo de dado.
 
 */
+
+/* Tipo de dados 
+    Array: */
+
+//Objeto: É um tipo de dado composto pelos outros tipos. Com ele, podemos organizar informações relacionadas em uma variável
+let carro = {
+  rodas: 4,
+  portas: 2,
+  nome: "um carro",
+  aVenda: true,
+};
+
+//Criação: um objeto vazio é bem simples de se criar: 
+let carro = {};
+
+//No caso de um objeto com propriedades(variaveis), fazemos assim:
+let carro = {
+    rodas: 4,
+    nome: "Carro"
+}
+
+//Caso você já tenha criado o objeto e queira adicionar um novo, você pode fazer de duas formas:
+carro.portas = 2;
+
+//ou:
+carro["portas"] = 2;
+
+//A alteração de dados funciona da mesma forma:
+carro.rodas = 5;
+carro.portas =4;
+carro.nome = "Carrão";
+
+carro["rodas"] = 3;
+carro["portas"] = 2;
+carro["nome"] = "Carrinho";
