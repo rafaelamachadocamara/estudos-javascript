@@ -89,7 +89,7 @@ let vetor = [];
 let vetor = [1, 22, 0, 100];
 
 //Você pode adicionar valores de qualquer tipo no vetor.
-let vetor = [1, "Olá Mundo", true, [1,2,3]];
+let vetor = [1, "Olá Mundo", true, [1, 2, 3]];
 
 //Acessando valores: Os valores podem ser acessados através de seu índice
 let vetor = [1, 22, 0, 100];
@@ -112,3 +112,22 @@ vetor[0] = 9000;
 //Insere um valor novo após o ultimo elemento
 vetor[5] = 7;
 
+/* Tipo de dados 
+    Array: */
+
+//Null: é um tipo de dado especial, ele representa a falta dde valor de qualquer outro tipo de dado
+let x = null;
+
+let y = 1;
+y = null;
+
+//Undefined: este tipo de dado aparece quanbdo criamos uma variável e tentamos acessar seu valor antes de ter atribuído algo a ela
+let x;
+
+console.log(x);
+
+/* Undefined !== Null: undefined e null são diferentes
+
+Resumindo, null ainda é um valor e undefined é quando o JavaScript não sabe qual o tipo de dado.
+
+*/
