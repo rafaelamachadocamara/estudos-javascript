@@ -113,7 +113,7 @@ vetor[0] = 9000;
 vetor[5] = 7;
 
 /* Tipo de dados 
-    Array: */
+    Null e Undefined: */
 
 //Null: é um tipo de dado especial, ele representa a falta dde valor de qualquer outro tipo de dado
 let x = null;
@@ -133,7 +133,7 @@ Resumindo, null ainda é um valor e undefined é quando o JavaScript não sabe q
 */
 
 /* Tipo de dados 
-    Array: */
+    Objeto: */
 
 //Objeto: É um tipo de dado composto pelos outros tipos. Com ele, podemos organizar informações relacionadas em uma variável
 let carro = {
@@ -143,14 +143,14 @@ let carro = {
   aVenda: true,
 };
 
-//Criação: um objeto vazio é bem simples de se criar: 
+//Criação: um objeto vazio é bem simples de se criar:
 let carro = {};
 
 //No caso de um objeto com propriedades(variaveis), fazemos assim:
 let carro = {
-    rodas: 4,
-    nome: "Carro"
-}
+  rodas: 4,
+  nome: "Carro",
+};
 
 //Caso você já tenha criado o objeto e queira adicionar um novo, você pode fazer de duas formas:
 carro.portas = 2;
@@ -160,9 +160,51 @@ carro["portas"] = 2;
 
 //A alteração de dados funciona da mesma forma:
 carro.rodas = 5;
-carro.portas =4;
+carro.portas = 4;
 carro.nome = "Carrão";
 
 carro["rodas"] = 3;
 carro["portas"] = 2;
 carro["nome"] = "Carrinho";
+
+/* Tipo de dados 
+    Funções: */
+
+//As Funcções são utilizadas para criarmos uma sequencia de operações para serem executadas
+let olaMundo = function () {
+  console.log("Olá Mundo");
+  console.log("Olá Mundo novamente");
+  console.log("Olá Mundo mais uma vez");
+};
+
+olaMundo();
+
+// Também é possivel passar valores para a funcão acessar
+let somar = function(valor1, valor2){
+    let resultado = valor1 + valor2;
+    console.log(resultado);
+}
+
+somar(1,2);
+somar(4,4);
+somar(99,1);
+
+//O ultimo recurso que estaremos vendo da função (por enquanto) é o comando return
+let somar = function(valor1, valor2){
+    let resultado = valor1 + valor2;
+    return resultado;
+}
+
+let subtrair = function(valor1, valor2){
+    console.log(valor1 - valor2);
+    return valor1 - valor2;
+}
+
+// Uma função com return devolve um valor que podemos guardar em uma variável
+let somar = function(valor1, valor2){
+    return valor1 + valor2;
+}
+
+let resultado = somar (10,10);
+
+//Caso você não coloque o return, pordefault as funções devolvem undefined
