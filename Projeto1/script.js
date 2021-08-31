@@ -269,3 +269,64 @@ if(cidade == "Porto Alegre"){
 }else{
     //Código
 }
+
+/* Tipo de condicionais 
+    Escopo: */
+
+// O bloco de escopo é definido pela região a qual variáveis e outros dados serão visiveis  
+
+let numero = 1;
+
+if(numero ==1){
+    let texto = "olá"
+    //acessando a varivel numero
+    numero = 2;
+}
+
+//erro de escopo
+console.log(texto);
+
+/* Tipo de condicionais 
+    Escopo Global: */
+
+//Uma variavel declarada fora de um função. torna-se global e todos os scripts e funcções em uma pagina da web podem acessa-la
+    let valor = 12;
+
+    let umaFuncao = function(){
+        console.log(valor);
+    }
+
+    if(valor == 12){
+        umaFuncao();
+        console.log(valor);
+    }
+
+/* Tipo de condicionais 
+    Escopo de Bloco: */
+
+//Variveis declaradas dentro de um local cercado por {}
+
+let varGlobal =1;
+function funcaoGlobal(){
+    let varFuncao = varGlobal + 1;
+
+    function funcaoLocal(){
+        let varFuncLocal = varFuncao + varGlobal;
+        console.log(varFuncLocal);
+    }
+}
+
+//Estas variáveis não podem ser acessadas fora do seu escopo
+
+/* Tipo de condicionais 
+    VAR: */
+
+// O var só possui escopo global e de bloco para funcões
+
+let x = 1;
+
+if(x == 1){
+    var y = 99;
+}
+
+console.log(y);
