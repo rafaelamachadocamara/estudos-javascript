@@ -208,3 +208,64 @@ let somar = function(valor1, valor2){
 let resultado = somar (10,10);
 
 //Caso você não coloque o return, pordefault as funções devolvem undefined
+
+//Condicionais:
+
+/* Tipo de condicionais 
+    if: */
+
+//O if (se) é um comando que permite executar um código apenas se uma condição  entre parênteses for verdadeira (true)
+
+let x = 1;
+
+if(x == 1){
+    //Executa o código
+}
+
+let disponivel = true;
+let quantidade = 5;
+
+if(quantidade > 0 && disponivel){
+    console.log("produto disponivel para venda");
+}
+
+/* Tipo de condicionais 
+    else: */
+
+//O comando else(senão) serve para executarmos um trecho de código quando o if for falso
+
+if(nome == "Maria"){
+    console.log("Acesso permitido")
+}else{
+    console.log("Acesso negado")
+}
+
+/* Tipo de condicionais 
+    if else: */
+
+if(cidade == "Porto Alegre"){
+    //Código
+}else{
+    if(cidade == "São Paulo"){
+        //Código
+    }else{
+        if(cidade == "Rio de Janeiro"){
+            //Código
+        }
+    }
+}
+
+/* Tipo de condicionais 
+    else if: */
+
+//Em casos como o anterior, é interessante usar o comando else if(senão se)
+
+if(cidade == "Porto Alegre"){
+    //Código
+}else if(cidade == "São Paulo"){
+    //Código
+}else if(cidade == "Rio de Janeiro"){
+    //Código
+}else{
+    //Código
+}
