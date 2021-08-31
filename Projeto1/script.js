@@ -330,3 +330,41 @@ if(x == 1){
 }
 
 console.log(y);
+
+/* Tipo de condicionais 
+    Switch: */
+
+//O switch serve para executar um código de acordo com diversos possiveis resultados
+
+switch(codigo){
+    case 50:
+        console.log("Banana");
+        break;
+    case 9540:
+        console.log("Limão");
+        break;
+    default:
+        console.log("Desconhecido");
+        break;
+}
+
+//O switch é a alternativa perfeita ao if/else caso existam muitas comparações de um valor
+
+//Case: para cada possibilidade é necessario termos um "case"
+//Break: O comando "break" serve para encerrar a leitura do switch, sem ele o codigo do case abaixo será executado
+//Default: O default é nosso "else" e executara quando nenhum case corresponder ao valor
+//Comparação: O switch compara usando o ===, então tanto o valor quanto o tipo do dado precisam ser iguais
+
+let codigo = "0";
+
+switch(codigo){
+    case 0:
+        console.log("zero");
+        break;
+    case 1:
+        console.log("um");
+        break;
+    default:
+        console.log("n/a");
+        break;
+}
