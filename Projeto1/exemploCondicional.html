@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Condicional 1</title>
+</head>
+<body>
+    <script>
+        let simbolo1 = "R$";
+        let simbolo2 = "$";
+        let simbolo3 = "€";
+
+        /* Escreva a função que recebera um simbolo de moeda como parametro
+        e retornara o nome dela caso conheça aquele simbolo, se não ira retornar "moeda nao encontrada" */
+       
+       //Resolvendo com Switch
+        function moeda(simbolo){
+            switch(simbolo){
+                case "R$":
+                    console.log("Real");
+                    break;
+                case "$":
+                    console.log("Dolar");
+                    break;
+                case "€":
+                    console.log("Libra");
+                    default:
+                        console.log("Moeda não encontrada");
+                        break;
+            }
+        }
+
+        //Resolvendo com if/else
+        function moeda2(simbolo){
+            if(simbolo == "R$"){
+                console.log("Essa moeda é o real");
+            }else if(simbolo == "$"){
+                console.log("Esta moeda é o dolar");
+            }else if(simbolo == "€"){
+                console.log("Está moeda é a libra");
+            }else{
+                console.log("Esta moeda não foi encontrada");
+            }
+        }
+
+    </script>
+</body>
+</html>
