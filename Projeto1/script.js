@@ -368,3 +368,67 @@ switch(codigo){
         console.log("n/a");
         break;
 }
+
+//Loops:
+
+/* Tipos de dados de repetição:
+     
+            FOR */
+
+/* é um comando que executa x vezes uma ação seguindo a forma como foi definido para ele fazê-la */
+
+/*Instrução para fazer o for:
+
+1) Instrução ocorrerá quando o for iniciar. Normalmente é a criação de uma varável de controle. 
+
+2) A condição para encerrar o for. Nesse caso, ele executará enquanto i for menor que 10 (enquanto essa condição
+    nunca se torne false teremos um loop infinito)
+    
+3) Instrução que ocorrerá o final de cada repetição. Normalmente é um incremento de 1 dda variável. 
+*/
+
+for(let i =0; i < 10; i++){
+    console.log(i);
+}
+
+//Utilidade: Além de executar uma mesma instrução várias vezes, ele é perfeito para ler vetores
+
+let lista = ["cachorro", "gato", "galinha"];
+
+for(let i = 0; i < lista.length; i++){
+    console.log(lista[i]);
+}
+
+//Também é perfeito para modificar todos os itens de um vetor
+
+let valores = [1,2,3,4,5];
+
+for(let i = 0; i < valores.length; i++){
+    valores[i] = valores[i] *2;
+    console.log(valores[i]);
+}
+
+/* Observação: Note que os passos padrões são opcionais. Mas caso você queira executar
+de outra forma, existem loops mehores para isso. */
+
+let i = 5;
+for(; i < 10; i++){
+    console.log(i);
+}
+
+let i = 3;
+for(; i < 10;){
+    console.log(i);
+    i = i + 2;
+}
+
+let i = 3;
+let x = 0;
+for(; ;){
+    console.log(i);
+    i = i + 2;
+    x = i/2;
+    if(x > 20){
+        break;;
+    }
+}
