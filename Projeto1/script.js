@@ -455,3 +455,34 @@ for(let numero of [0,1,2,3,4,5,6,7]){
 }
 
 //Caso você precise trabalhar com índices ou múltiplas posições da lista, talvez seja melhor usar o for normal
+
+/* Tipos de laços de repetição:
+     
+            WHILE */
+
+//Este loop funciona de forma bem simples. Enquanto(while) a condição for true, executa o código
+
+//Lembre que você precisa fornecer uma forma para que o loop termine, caso contrário tera um loop infinito
+
+let num = 1;
+
+while(num < 10){
+    console.log("valor:" + num);
+    num = num + 2;
+}
+
+/* Tipos de laços de repetição:
+     
+            DO WHILE */
+
+//Similar ao while, o do while executa um trecho de código e depois testa se o executará novamente
+
+let num = 1;
+
+do{
+    console.log(num);
+    num++;
+}
+while(num < 10);
+
+//Ambos "while" e "do while" tem uma lógica similar. A situação definirá qual o melhor loop para seu código
