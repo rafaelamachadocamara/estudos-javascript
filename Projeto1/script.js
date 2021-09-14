@@ -371,7 +371,7 @@ switch(codigo){
 
 //Loops:
 
-/* Tipos de dados de repetição:
+/* Tipos de laços de repetição:
      
             FOR */
 
@@ -432,3 +432,26 @@ for(; ;){
         break;;
     }
 }
+
+/* Tipos de laços de repetição:
+     
+            FOR OF */
+
+//Este loop é especifico para iterar entre os elementos de uma lista
+
+/* Você pode ler ele como "Para cada item de uma lista". No exemplo abaixo, dia começará sendo com o valor "segunda"
+e o último será como "sexta" */
+
+let dias = ["segunda", "terça", "quarta", "quinta", "sexta"];
+
+for(let dia of dias){
+    console.log(dia);
+}
+
+//Como você já deve ter notado, percorrer a lista em ordem crescente é o coração do for of
+
+for(let numero of [0,1,2,3,4,5,6,7]){
+    console.log(numero);
+}
+
+//Caso você precise trabalhar com índices ou múltiplas posições da lista, talvez seja melhor usar o for normal
