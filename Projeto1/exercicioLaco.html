@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Laço de Repetição 1</title>
+</head>
+<body>
+    <script>
+        function calcularVetor(vetor, numero){
+            for(let i = 0; i < vetor.length; i++){
+                if(vetor[i] > 5){
+                    vetor[i] = vetor[i] * numero;
+                }
+            }
+
+            return vetor;
+        }
+
+        //Maneira de fazer com for of
+        let resultado = [];
+        for(let item of vetor){
+            if(item > 5){
+              //  resultado = [] -> length = 0
+              // resultado = [10] -> lenght = 1
+              // resultado = [10, 45] -> length = 2
+                resultado[resultado.length] = item * numero;
+            }else{
+                resultado[resultado.length] = item;
+            }
+            return resultado
+        }
+    </script>
+</body>
+</html>
